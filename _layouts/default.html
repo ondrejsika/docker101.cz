@@ -10,15 +10,6 @@
   </head>
 
         <style>
-.center-row {
-height: 100vh;
-	display:table;
-}
-.center {
-	display:table-cell;
-    vertical-align:middle;
-    float:none;
-}
 body {
   padding: 0;
   margin: 0;
@@ -30,23 +21,113 @@ body {
 .form-control {
    width: 276px;
 }
+            /* Space out content a bit */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 
-</style>
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+/* Customize container */
+@media (min-width: 56em) {
+  .container {
+    max-width: 54rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+        </style>
   <body>
-<div class="container">
-<div class="row center-row">
-<div class="col-sm-5 center">
-<h1>Docker 101</h1>
+  <div class="container">
+      <div class="header clearfix">
+          <h3 class="text-muted">Docker 101</h3>
+      </div>
 
-        {{ content }}
+      <div class="row clearfix" style="padding-bottom: 30px;">
 
-<p><a href="https://bysika.cz">Ondrej Sika</a>
-/ <a href="https://skoleni-git.cz">skoleni-git.cz</a>
-/ <a href="https://skoleni-docker.cz">skoleni-docker.cz</a>
-/ <a href="https://sedu.cz">SEDU.cz</a>
-</div>
-</div>
-</div>
+          <div class="col-lg-8">
+              {{ content }}
+          </div>
+
+          <div class="col-lg-4">
+              <h4>Clanky</h4>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+              <div class="row ">
+                  <div class="col-lg-12">
+                      <div style="background-color: rgba(17,159,236,0.15); padding: 5px">
+                          <h3>Skoleni Dockeru</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+
+      <div class="row footer" style="padding-bottom: 10px;">
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-4">
+                      <img src="/ondrejsika3.jpg" class="img-fluid">
+                  </div>
+                  <div class="col-8">
+                      <h3>Ondrej Sika</h3>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="row ">
+                  <div class="col-4">
+                      <img src="/ondrejsikalogo_noborder_download.png" class="img-fluid">
+                  </div>
+                  <div class="col-8">
+                      <h3>SEDU.cz</h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <hr>
+
+      <p><a href="https://ondrejsika.com">Ondrej Sika</a>
+          / <a href="https://bysika.cz">skoleni a konzultace</a>
+          / <a href="https://sedu.cz">SEDU.cz</a>
+          / <a href="https://skoleni-docker.cz">skoleni-docker.cz</a>
+          / <a href="https://skoleni-git.cz">skoleni-git.cz</a>
+  </div>
   </body>
 </html>
 
