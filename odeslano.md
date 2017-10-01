@@ -1,14 +1,11 @@
 ---
 layout: default
+title: Prihlaseno | Docker 101
 ---
 
 
-## Odesláno
+## Prihlaseno
 
-Ozvu se Vam, jakmile projekt spustim.
-
-Pokud mate zajem o skoleni dockeru, podivejte se na <https://skoleni-docker.cz>
-
-V případě jakýchkoliv dotazů pište na <ondrej@ondrejsika.com>
+Dekuji za vas zajem, v případě jakýchkoliv dotazů pište na <ondrej@ondrejsika.com>
 
 
